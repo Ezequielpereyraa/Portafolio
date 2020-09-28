@@ -16,7 +16,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  filter: invert(1) hue-rotate(180deg);
   @media only screen and (max-width: $bp-large) {
     font-size: 50%;
   }
@@ -27,12 +26,12 @@ body {
   line-height: 1.3;
   color: #fff;
   background-color: rgba($bg-color, 0.96);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
   font-size: 7rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin: 2rem;
   text-align: center;
   position: relative;
