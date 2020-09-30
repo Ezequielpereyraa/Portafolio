@@ -14,7 +14,7 @@ const Wrapper = () => {
               steps={[
                 "Hola! 👋🏽 ",
                 1000,
-                "Soy Frontend Developer Junior 🧑🏽‍💻 ",
+                "Soy Frontend Developer Junior  ",
                 3000,
                 "📣 Bienvenidos a mi Portafolio 💼",
                 2000,

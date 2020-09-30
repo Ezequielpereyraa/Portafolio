@@ -15,12 +15,13 @@
   }
 
   &__descripcion {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.8;
   }
   &__skills {
+    color: #ae5152;
     font-size: 5rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
 }
 
@@ -36,11 +37,20 @@
     margin: 2rem 0;
     h5 {
       font-size: 1.7rem;
+      transition: 0.5s;
+      cursor: default;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
   &__img {
     height: 10rem;
     width: 6rem;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 .skills__descripcion {

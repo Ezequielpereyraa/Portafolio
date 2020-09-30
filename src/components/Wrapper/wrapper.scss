@@ -34,7 +34,7 @@ $bp-small: 27em;
     grid-column: 7 / -1;
     grid-row: 6 / span 1;
     font-size: 7vw;
-    color: #e8e2ca;
+    color: #ffff;
     text-transform: uppercase;
     text-shadow: 2px 2px 0 #272a3d, 2px -2px 0 #272a3d, -2px 2px 0 #272a3d,
       -2px -2px 0 #272a3d, 2px 0px 0 #272a3d, 0px 2px 0 #272a3d,
@@ -60,8 +60,8 @@ $bp-small: 27em;
     grid-column: 7 / -1;
     grid-row: 7 / span 1;
     text-transform: uppercase;
-    text-shadow: 1px 2px 0 #e8e2ca, 2px 1px 0 #e8e2ca;
-    color: #ae5152;
+    text-shadow: 1px 2px 0.4rem #272a3d, 2px 1px 0.6rem #272a3d;
+    color: #ffa7a3;
     @media only screen and (max-width: 75em) {
       grid-column: 6/-1;
     }
@@ -70,9 +70,9 @@ $bp-small: 27em;
       height: 100%;
       grid-column: 1/-1;
       grid-row: 3;
-      justify-self: center;
+      margin: 1.4rem;
       align-self: flex-end;
-      font-size: 5vw;
+      font-size: 7vw;
     }
   }
 }

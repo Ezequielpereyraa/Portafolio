@@ -1,6 +1,6 @@
 $bg-color: #272a3d;
 $color-primary: #fff;
-$color-secundary: #ae5152;
+$color-secundary: #dd8682;
 $bp-large: 75em;
 $bp-medium: 57em;
 $bp-small: 35em;
@@ -27,6 +27,7 @@ body {
   color: #fff;
   background-color: rgba($bg-color, 0.96);
   font-family: "Montserrat", sans-serif;
+  cursor: default;
 }
 
 h3 {

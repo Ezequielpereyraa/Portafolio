@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import './sobremi.scss';
+import "./sobremi.scss";
 
-import html from '../../assets/html-icon.svg';
-import css from '../../assets/css-icon.svg';
-import sass from '../../assets/sass-icon.svg';
-import bootstrap from '../../assets/bootstrap-icon.svg';
-import javascript from '../../assets/javascript-icon.svg';
-import react from '../../assets/react-icon.svg';
+import html from "../../assets/html-icon.svg";
+import css from "../../assets/css-icon.svg";
+import sass from "../../assets/sass-icon.svg";
+import bootstrap from "../../assets/bootstrap-icon.svg";
+import javascript from "../../assets/javascript-icon.svg";
+import react from "../../assets/react-icon.svg";
 
-import Contacto from '../Contacto';
+import Contacto from "../Contacto";
 
 const Sobremi = () => {
-  document.title = 'GEP | Sobre Mi 👨🏽‍🦱';
+  document.title = "GEP | Sobre Mi 👨🏽‍🦱";
   return (
-    <section className='sobremi' id='sobremi'>
+    <section className="sobremi" id="sobremi">
       <h3>Sobre mi</h3>
-      <div className='sobremi__container'>
-        <p className='sobremi__descripcion'>
+      <div className="sobremi__container">
+        <p className="sobremi__descripcion">
           Me considero una persona <b>comprometida, responsable</b>, con muchas
           ganas de aprender y crecer profesionalmente. Me gusta trabajar en
           equipo y tengo facilidad de adaptación. <br /> <br />
@@ -33,38 +33,35 @@ const Sobremi = () => {
           soy analítico en lo que hago. Domino varias tecnologías, diversos
           frames y librerías como así también manejo líneas de comando
           (terminal), sistema de gestion de paquetes como <b>NPM</b>,<b>YARN</b>
-          , como tambien realizar <b>deploys</b> en host como <b>Netlify</b>,{' '}
+          , como tambien realizar <b>deploys</b> en host como <b>Netlify</b>,{" "}
           <b>Github Pages</b>. <br />
           Manejo muy bien el UX/UI, sé modelar de manera prolija mockups.
         </p>
-        <h1 className='sobremi__skills'>
-          <span role='img' aria-label='start'></span>
-          Skills
-        </h1>
-        <div className='skills'>
-          <div className='skills__box'>
+        <h1 className="sobremi__skills">Skills</h1>
+        <div className="skills">
+          <div className="skills__box">
             <h5>HTML</h5>
-            <img className='skills__img' src={html} alt='Html' />
+            <img className="skills__img" src={html} alt="Html" />
           </div>
-          <div className='skills__box'>
+          <div className="skills__box">
             <h5>CSS</h5>
-            <img className='skills__img' src={css} alt='Css' />
+            <img className="skills__img" src={css} alt="Css" />
           </div>
-          <div className='skills__box'>
+          <div className="skills__box">
             <h5>SASS</h5>
-            <img className='skills__img' src={sass} alt='Sass' />
+            <img className="skills__img" src={sass} alt="Sass" />
           </div>
-          <div className='skills__box'>
+          <div className="skills__box">
             <h5>BOOTSTRAP</h5>
-            <img className='skills__img' src={bootstrap} alt='Bootstrap' />
+            <img className="skills__img" src={bootstrap} alt="Bootstrap" />
           </div>
-          <div className='skills__box'>
+          <div className="skills__box">
             <h5>JAVASCRIPT</h5>
-            <img className='skills__img' src={javascript} alt='Javascript' />
+            <img className="skills__img" src={javascript} alt="Javascript" />
           </div>
-          <div className='skills__box'>
-            <h5>React</h5>
-            <img className='skills__img' src={react} alt='React' />
+          <div className="skills__box">
+            <h5>REACT</h5>
+            <img className="skills__img" src={react} alt="React" />
           </div>
         </div>
 
