@@ -9,8 +9,6 @@ import bootstrap from "../../assets/bootstrap-icon.svg";
 import javascript from "../../assets/javascript-icon.svg";
 import react from "../../assets/react-icon.svg";
 
-import Contacto from "../Contacto";
-
 const Sobremi = () => {
   document.title = "GEP | Sobre Mi 👨🏽‍🦱";
   return (
@@ -64,8 +62,6 @@ const Sobremi = () => {
             <img className="skills__img" src={react} alt="React" />
           </div>
         </div>
-
-        <Contacto />
       </div>
     </section>
   );
