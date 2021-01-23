@@ -46,7 +46,9 @@ export default function ContactUs() {
         <textarea name="message" />
         <input required type="submit" value="Enviar" />
       </form>
-      <Contacto />
+      <div className="container__contact">
+        <Contacto />
+      </div>
     </div>
   );
 }
