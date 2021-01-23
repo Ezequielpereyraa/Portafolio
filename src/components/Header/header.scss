@@ -7,7 +7,9 @@
   bottom: 0;
   background-color: #272a3d;
   box-shadow: -1px -2px 3px #ffa7a3;
-
+  @media only screen and(max-width:31.25em) {
+    display: none;
+  }
   &__lista {
     line-height: 4rem;
     margin: 1rem 0;

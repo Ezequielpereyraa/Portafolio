@@ -15,7 +15,7 @@ $bp-small: 27em;
     background-position: 80% 50%;
   }
   @media only screen and (max-width: 57em) {
-    background-position: 55% 50%;
+    background-position: 44% 46%;
   }
   @media only screen and (max-width: $bp-small) {
     background-position: 23% 50%;
@@ -68,9 +68,9 @@ $bp-small: 27em;
 
     @media only screen and (max-width: 27em) {
       height: 100%;
-      grid-column: 1/-1;
+      grid-column: 3/-1;
       grid-row: 3;
-      margin: 1.4rem;
+      margin: 1rem;
       align-self: flex-end;
       font-size: 7vw;
     }

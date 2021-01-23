@@ -9,6 +9,7 @@
     margin-top: 3rem;
   }
   input {
+    padding: 0.5rem 0;
     &[type="submit"] {
       margin-top: 3rem;
       background-color: #dd8682;
@@ -23,5 +24,10 @@
         transform: scale(1.1);
       }
     }
+  }
+}
+.container__contact {
+  @media only screen and(max-width:35em) {
+    margin-bottom: 10vh;
   }
 }
