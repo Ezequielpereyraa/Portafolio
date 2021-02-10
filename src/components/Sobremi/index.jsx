@@ -2,13 +2,6 @@ import React from "react";
 
 import "./sobremi.scss";
 
-import html from "../../assets/html-icon.svg";
-import css from "../../assets/css-icon.svg";
-import sass from "../../assets/sass-icon.svg";
-import bootstrap from "../../assets/bootstrap-icon.svg";
-import javascript from "../../assets/javascript-icon.svg";
-import react from "../../assets/react-icon.svg";
-
 const Sobremi = () => {
   document.title = "GEP | Sobre Mi 👨🏽‍🦱";
   return (
@@ -16,10 +9,14 @@ const Sobremi = () => {
       <h3>Sobre mi</h3>
       <div className="sobremi__container">
         <p className="sobremi__descripcion">
-          Me considero una persona <b>comprometida, responsable</b>, con muchas
-          ganas de aprender y crecer profesionalmente. Me gusta trabajar en
-          equipo y tengo facilidad de adaptación. <br /> <br />
-          Actualmente me estoy iniciando en<b> Desarrollo Web </b>y me gustaría
+          ‎Apasionado por la tecnología. En el proceso de convertirme en Full
+          Stack Developer. <br /> Soy comprometido, responsable, me gusta
+          trabajar en equipo y tengo facilidad de adaptación.
+          <br /> Abierto a reubicarme para descubrir nuevas oportunidades,
+          experiencias y personas.‎ <br />
+          En este momento también me encuentro realizando un proyecto en
+          TypeScript con ReactNative y Mongo.
+          {/* Actualmente me estoy iniciando en<b> Desarrollo Web </b>y me gustaría
           continuar adquiriendo experiencia para complementar mis conocimientos
           y así obtener más herramientas que me ayuden a desenvolverme de la
           mejor manera en el mundo de la programación. <br /> <br />
@@ -33,33 +30,24 @@ const Sobremi = () => {
           (terminal), sistema de gestion de paquetes como <b>NPM</b>,<b>YARN</b>
           , como tambien realizar <b>deploys</b> en host como <b>Netlify</b>,{" "}
           <b>Github Pages</b>. <br />
-          Manejo muy bien el UX/UI, sé modelar de manera prolija mockups.
+          Manejo muy bien el UX/UI, sé modelar de manera prolija mockups. */}
         </p>
         <h1 className="sobremi__skills">Skills</h1>
         <div className="skills">
           <div className="skills__box">
             <h5>HTML</h5>
-            <img className="skills__img" src={html} alt="Html" />
-          </div>
-          <div className="skills__box">
             <h5>CSS</h5>
-            <img className="skills__img" src={css} alt="Css" />
-          </div>
-          <div className="skills__box">
             <h5>SASS</h5>
-            <img className="skills__img" src={sass} alt="Sass" />
-          </div>
-          <div className="skills__box">
             <h5>BOOTSTRAP</h5>
-            <img className="skills__img" src={bootstrap} alt="Bootstrap" />
-          </div>
-          <div className="skills__box">
-            <h5>JAVASCRIPT</h5>
-            <img className="skills__img" src={javascript} alt="Javascript" />
-          </div>
-          <div className="skills__box">
-            <h5>REACT</h5>
-            <img className="skills__img" src={react} alt="React" />
+            <h5>JavaScript</h5>
+            <h5>React / Redux</h5>
+            <h5>NodeJS</h5>
+            <h5>ExpressJS</h5>
+            <h5>MongoDB</h5>
+            <h5>PostgreSQL</h5>
+            <h5>Sequelize</h5>
+            <h5>Git</h5>
+            <h5>SCRUM</h5>
           </div>
         </div>
       </div>

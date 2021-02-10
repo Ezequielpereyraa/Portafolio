@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import "./wrapper.scss";
 
 const Wrapper = () => {
-  document.title = "Ezequiel Pereyra 👨🏼‍💻 | Frontend Developer Jr";
+  document.title = "Ezequiel Pereyra 👨🏼‍💻 | Full Stack Developer";
   return (
     <>
       <div className="wrapper">
@@ -14,7 +14,7 @@ const Wrapper = () => {
               steps={[
                 "Hola! 👋🏽 ",
                 1000,
-                "Soy Frontend Developer ",
+                "Soy Full Stack Developer ",
                 3000,
                 "📣 Bienvenidos a mi Portafolio 💼",
                 2000,
