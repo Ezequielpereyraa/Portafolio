@@ -29,27 +29,25 @@ const Nav = () => {
         onClick={() => setIsShow(!isShow)}
       >
         <ul className="navigation__list">
-          <li className="navigation__item">
-            <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
-              <NavLink to="/" className="navigation__link">
-                Home
-              </NavLink>
-            </li>
-            <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
-              <NavLink to="/sobremi" className="navigation__link">
-                Sobre mí
-              </NavLink>
-            </li>
-            <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
-              <NavLink to="/portafolio" className="navigation__link">
-                Proyectos
-              </NavLink>
-            </li>
-            <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
-              <NavLink to="/contacto" className="navigation__link">
-                Contacto
-              </NavLink>
-            </li>
+          <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
+            <NavLink to="/" className="navigation__link">
+              Home
+            </NavLink>
+          </li>
+          <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
+            <NavLink to="/sobremi" className="navigation__link">
+              Sobre mí
+            </NavLink>
+          </li>
+          <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
+            <NavLink to="/portafolio" className="navigation__link">
+              Proyectos
+            </NavLink>
+          </li>
+          <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
+            <NavLink to="/contacto" className="navigation__link">
+              Contacto
+            </NavLink>
           </li>
         </ul>
       </nav>

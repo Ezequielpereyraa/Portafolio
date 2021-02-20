@@ -1,10 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import "./proyectos.scss";
 import Repositorio from "./Repositorios";
-import destacado1 from "../../assets/destacado1.png";
-import destacado2 from "../../assets/destacado2.png";
-import destacado3 from "../../assets/destacado3.png";
-import destacado4 from "../../assets/destacado4.png";
+import almazen from "../../assets/Almazen.png";
+import petBuddies from "../../assets/Pet-Buddies.jpg";
 import ProyectosContext from "../../context/ProyectosContext";
 
 const Portafolio = () => {
@@ -30,38 +28,38 @@ const Portafolio = () => {
           </span>
         </h5>
         <div className="destacados__container">
-          <a
-            className="destacados__enlaces"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://ep-natours.netlify.app/"
-          >
-            <img src={destacado1} alt="Proyecto1" />
-          </a>
-          <a
-            className="destacados__enlaces"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://ep-buscadorimagenes.netlify.app/"
-          >
-            <img src={destacado2} alt="Proyecto2" />
-          </a>
-          <a
-            className="destacados__enlaces"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://ep-cotizadorcriptomonedas.netlify.app/"
-          >
-            <img src={destacado3} alt="Proyecto3" />
-          </a>
-          <a
-            className="destacados__enlaces"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://ep-marvelcomicschallenge.netlify.app/"
-          >
-            <img src={destacado4} alt="Proyecto4" />
-          </a>
+          <div className="destacados__box">
+            <img
+              className="destacados__box--img"
+              src={petBuddies}
+              alt="PetBuddies"
+            />
+            <div className="destacados__box--description">
+              <h1>PetBuddies</h1>
+              <p>
+                Este es mi proyecto final en Henry. Una App mobile con React
+                Native, Redux, Typescript,NodeJs, Express, MongoDB y Firebase
+              </p>
+            </div>
+          </div>
+
+          <div className="destacados__box">
+            <img className="destacados__box--img" src={almazen} alt="AlmaZen" />
+            <div className="destacados__box--description">
+              <h1>AlmaZen</h1>
+              <p>
+                E-commerce Web con React, Redux, Sass, NodeJs, Express,
+                Sequelize, PostgresSQL, Passport
+              </p>
+              <a
+                href="https://almazenhenry-51bf6.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div className="portafolio-container">

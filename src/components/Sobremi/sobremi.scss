@@ -1,76 +1,68 @@
 .sobremi {
-  margin: 5rem auto;
-  max-width: 100%;
-  width: 120rem;
-
+  position: relative;
+  height: 90vh;
+  margin-top: 3rem;
   @media only screen and (max-width: 57em) {
-    grid-template-columns: 100%;
-  }
-  &__container {
-    margin-top: 1rem;
-    padding: 2rem 10rem;
-    @media only screen and (max-width: 50em) {
-      margin-bottom: 6vh;
-    }
-    @media only screen and (max-width: 27em) {
-      margin-top: 0;
-      padding: 1rem 2rem;
-      margin-bottom: 10vh;
-    }
-  }
-
-  &__descripcion {
-    font-weight: lighter;
-    font-size: 2rem;
-    line-height: 1.8;
-  }
-  &__skills {
-    color: #ae5152;
-    font-size: 5rem;
-    margin-top: 1rem;
-  }
-}
-
-.skills {
-  display: flex;
-  justify-content: center;
-  &__box {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-
-    h5 {
-      font-size: 1.7rem;
-      transition: 0.5s;
-      display: flex;
-      margin: 1.5rem;
-
-      align-items: center;
-      cursor: default;
-      &:hover {
-        transform: translateX(1rem);
-      }
-      &::before {
-        content: "";
-        display: block;
-        width: 1rem;
-        height: 1rem;
-        transform: translateX(-1rem);
-        border-radius: 50%;
-        background-color: #fff;
-      }
-    }
+    width: 100%;
   }
   &__img {
-    height: 10rem;
-    width: 6rem;
-    transition: 0.5s;
-    &:hover {
-      transform: scale(1.1);
+    opacity: 0.8;
+    animation: imagen 2s;
+    width: 70vw;
+    position: absolute;
+    bottom: 0;
+    @media only screen and (max-width: 50em) {
+      opacity: 0.5;
+    }
+  }
+
+  &__container {
+    @media only screen and (max-width: 50em) {
+      padding: 2rem;
+    }
+    @media only screen and (max-width: 27em) {
+      padding: 1rem;
+    }
+    div {
+      padding: 6rem;
+      width: 70%;
+      margin: 2rem 9rem 0 auto;
+      border-radius: 2rem;
+      background-color: #090a0e;
+    }
+  }
+  &__descripcion {
+    padding: 2rem;
+    border-radius: 4;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 2.1;
+    &::first-letter {
+      margin-left: 2rem;
+      font-size: 2.4rem;
+    }
+
+    span {
+      color: #fff;
+      font-weight: 800;
     }
   }
 }
-.skills__descripcion {
-  font-size: 1.5rem;
+
+@keyframes imagen {
+  0% {
+    transform: translateX(-100rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes description {
+  0% {
+    transform: translateX(100rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
 }
