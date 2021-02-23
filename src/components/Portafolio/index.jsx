@@ -4,7 +4,7 @@ import Repositorio from "./Repositorios";
 import almazen from "../../assets/Almazen.png";
 import petBuddies from "../../assets/Pet-Buddies.jpg";
 import ProyectosContext from "../../context/ProyectosContext";
-
+import Github from "../../assets/github-icon.svg";
 const Portafolio = () => {
   document.title = "GEP | Proyectos 💼";
 
@@ -37,9 +37,21 @@ const Portafolio = () => {
             <div className="destacados__box--description">
               <h1>PetBuddies</h1>
               <p>
-                Este es mi proyecto final en Henry. Una App mobile con React
-                Native, Redux, Typescript,NodeJs, Express, MongoDB y Firebase
+                App mobile con React Native, Redux, Typescript,NodeJs, Express,
+                MongoDB y Firebase
               </p>
+              <a
+                className="destacados__box--link"
+                href="https://github.com/Ezequielpereyraa/PetBuddies"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="destacados__box--git"
+                  src={Github}
+                  alt="Github"
+                />
+              </a>
             </div>
           </div>
 
@@ -51,6 +63,18 @@ const Portafolio = () => {
                 E-commerce Web con React, Redux, Sass, NodeJs, Express,
                 Sequelize, PostgresSQL, Passport
               </p>
+              <a
+                className="destacados__box--link"
+                href="https://github.com/Ezequielpereyraa/ecommerce-ft07-g12-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="destacados__box--git"
+                  src={Github}
+                  alt="Github"
+                />
+              </a>
               <a
                 href="https://almazenhenry-51bf6.web.app/"
                 target="_blank"

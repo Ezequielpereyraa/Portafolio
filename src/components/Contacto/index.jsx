@@ -46,14 +46,14 @@ const Contacto = () => {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/ezequiel-pereyra/"
+            href="https://www.linkedin.com/in/ezequielpereyra/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
               className="icons"
               src={linkedin}
-              alt="https://www.linkedin.com/in/ezequiel-pereyra/"
+              alt="https://www.linkedin.com/in/ezequielpereyra/"
             />
           </a>
         </div>

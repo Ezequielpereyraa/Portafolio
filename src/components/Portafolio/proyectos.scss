@@ -7,33 +7,24 @@
   max-width: 100%;
   width: 120rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(56rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-column-gap: 4rem;
   grid-row-gap: 2rem;
   justify-content: center;
   margin: 0 auto;
-  @media only screen and (max-width: 75em) {
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-row-gap: 3rem;
-    max-width: 80%;
-  }
-  @media only screen and (max-width: 37.5em) {
-    max-width: 100%;
-  }
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 2rem 0;
-  justify-content: space-between;
+  padding: 0rem 2rem;
+  justify-content: space-around;
   border-radius: 0.5rem;
   border: 1px solid rgb(201, 201, 201);
   color: #fff;
-  @media only screen and (max-width: 75em) {
-    grid-template-columns: 100%;
-  }
+  box-shadow: 0 0 1rem rgba(#000, 0.75);
   &__titulo {
+    margin-top: 1rem;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Oswald";
@@ -51,8 +42,8 @@
     }
   }
   &__descripcion {
-    font-weight: 300;
-    font-size: 1.4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
     margin: 1rem 0;
   }
 
@@ -60,11 +51,10 @@
     align-self: flex-end;
     justify-self: flex-end;
     font-size: 1.3rem;
-    padding: 1rem 0;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
+    color: #ccc;
     transition: all 0.6s ease;
     &:hover {
       transform: translateX(0.5rem);
@@ -74,9 +64,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0 0.1rem 0;
+    margin-bottom: 1rem;
     span {
       font-weight: 300;
+      color: #ccc;
       font-size: 1.4rem;
     }
   }
@@ -94,19 +85,28 @@
   &__container {
     margin-top: 2rem;
   }
+  .destacados__box--git {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 50%;
+  }
   &__box {
     position: relative;
     width: 100%;
     margin: 2rem 0;
-    height: 60rem;
     overflow: hidden;
     border-radius: 0.6rem;
     box-shadow: 0 0 1rem rgba(#000, 0.1);
     transition: 0.2s ease-in-out;
+
     &:hover {
       box-shadow: 0 0 1rem rgba(#000, 0.8);
     }
-
+    &:hover &--git {
+      right: 2rem;
+    }
     &:hover &--description {
       left: 0rem;
       background-color: rgba(#000, 0.78);
@@ -114,30 +114,43 @@
     &:hover a {
       right: 2rem;
     }
-    &:hover img {
+    &:hover &--img {
       filter: blur(0.3rem);
     }
+    &--link {
+      position: absolute;
+      top: 4rem;
+      right: 3rem;
+    }
+
     a {
       text-decoration: none;
       cursor: pointer;
       position: absolute;
       color: #fff;
       font-size: 1.5rem;
-      top: 1.2rem;
+      bottom: 2.2rem;
       right: -12rem;
       transition: 0.3s linear;
+      z-index: 1;
       &:hover {
         transform: translateX(1rem);
       }
     }
     &--description {
-      padding: 2rem 4rem;
-      height: 25%;
+      padding: 2.5rem 4rem;
+      height: 15%;
       position: absolute;
       bottom: 0;
       left: -250rem;
       right: 0;
       transition: 0.6s ease-in-out;
+      @media only screen and (max-width: 50em) {
+        height: 25%;
+      }
+      @media only screen and (max-width: 35em) {
+        height: 39%;
+      }
       h1 {
         font-size: 3.5rem;
         text-align: center;
@@ -150,7 +163,7 @@
         text-align: center;
       }
     }
-    img {
+    &--img {
       transition: 0.6s ease-in-out;
       width: 100%;
       height: 100%;

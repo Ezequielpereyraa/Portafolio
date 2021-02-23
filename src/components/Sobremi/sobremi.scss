@@ -11,8 +11,12 @@
     width: 70vw;
     position: absolute;
     bottom: 0;
-    @media only screen and (max-width: 50em) {
-      opacity: 0.5;
+
+    @media only screen and (max-width: 56em) {
+      width: 100vw;
+    }
+    @media only screen and (max-width: 31.25em) {
+      display: none;
     }
   }
 
@@ -29,6 +33,14 @@
       margin: 2rem 9rem 0 auto;
       border-radius: 2rem;
       background-color: #090a0e;
+      @media only screen and (max-width: 62em) {
+        margin: 2rem auto;
+      }
+      @media only screen and (max-width: 31.25em) {
+        background-color: transparent;
+        width: 95%;
+        padding: 1rem 1.5rem;
+      }
     }
   }
   &__descripcion {
