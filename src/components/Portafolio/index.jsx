@@ -5,6 +5,7 @@ import almazen from "../../assets/Almazen.png";
 import petBuddies from "../../assets/Pet-Buddies.jpg";
 import ProyectosContext from "../../context/ProyectosContext";
 import Github from "../../assets/github-icon.svg";
+
 const Portafolio = () => {
   document.title = "GEP | Proyectos 💼";
 

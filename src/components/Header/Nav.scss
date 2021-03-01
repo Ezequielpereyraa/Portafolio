@@ -2,6 +2,7 @@
   display: none;
   @media only screen and(max-width:31.25em) {
     display: block;
+    z-index: 99;
   }
   &__checkbox {
     display: none;

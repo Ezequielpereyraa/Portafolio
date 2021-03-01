@@ -16,7 +16,7 @@ const Wrapper = () => {
                 1000,
                 "Soy Full Stack Developer ",
                 3000,
-                "📣 Bienvenidos a mi Portafolio 💼",
+                "📣 Bienvenidos a mi Portfolio 💼",
                 2000,
               ]}
               loop={Infinity}
