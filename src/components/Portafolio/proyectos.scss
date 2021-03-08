@@ -1,6 +1,16 @@
 .portafolio {
   padding: 0rem 4rem;
   margin-bottom: 15vh;
+  &__vermas {
+    font-size: 2rem;
+    text-align: center;
+    margin: 4rem 0;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #dd8682;
+    }
+  }
 }
 
 .portafolio-container {
@@ -17,19 +27,20 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 0rem 2rem;
+  padding: 2rem;
   justify-content: space-around;
   border-radius: 0.5rem;
   border: 1px solid rgb(201, 201, 201);
   color: #fff;
   box-shadow: 0 0 1rem rgba(#000, 0.75);
+  position: relative;
+  content-visibility: auto;
   &__titulo {
-    margin-top: 1rem;
-    text-transform: uppercase;
     text-decoration: none;
-    font-family: "Oswald";
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
     transition: 0.5s;
     svg {
       margin-right: 0.6rem;
@@ -38,33 +49,43 @@
     }
     &-enlace {
       text-decoration: none;
-      color: #dd8682;
+      color: antiquewhite;
+      transition: 0.5s linear;
+      &:hover {
+        border-bottom: 1px solid #dd8682;
+      }
     }
   }
   &__descripcion {
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: 1rem 0;
   }
 
   &__enlace {
-    align-self: flex-end;
-    justify-self: flex-end;
-    font-size: 1.3rem;
-    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    font-weight: bold;
+    color: #dd8682;
     text-decoration: none;
     font-weight: bold;
-    color: #ccc;
-    transition: all 0.6s ease;
+    transition: all 0.2s linear;
+    border-bottom: 3px solid #dd8682;
     &:hover {
       transform: translateX(0.5rem);
+      padding: 0.6rem 1rem;
+      color: #fff;
+      background-color: #dd8682;
+      box-shadow: 0 1rem 2rem rgba(#000, 50%);
     }
   }
   &__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
     span {
       font-weight: 300;
       color: #ccc;

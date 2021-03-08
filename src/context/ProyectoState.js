@@ -1,7 +1,9 @@
-import React, { useReducer } from "react";
-import ProyectoReducer from "./ProyectoReducer";
-import ProyectosContext from "./ProyectosContext";
-import { GET_PROYECTOS } from "./Types";
+import React, { useReducer } from 'react';
+
+import { datosProyectos } from './data';
+import ProyectoReducer from './ProyectoReducer';
+import ProyectosContext from './ProyectosContext';
+import { GET_PROYECTOS } from './Types';
 
 const ProyectoState = (props) => {
   const initialState = {
@@ -14,9 +16,6 @@ const ProyectoState = (props) => {
   // Funciones para el proyecto;
   const getProyects = async () => {
     try {
-      const url = `https://api.github.com/users/Ezequielpereyraa/repos`;
-      const proyectosUrl = await fetch(url);
-      const datosProyectos = await proyectosUrl.json();
       dispatch({
         type: GET_PROYECTOS,
         payload: datosProyectos,

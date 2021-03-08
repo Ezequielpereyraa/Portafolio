@@ -1,10 +1,10 @@
-import React from "react";
-import "./contacto.scss";
+import './contacto.scss';
 
-import twitter from "../../assets/twitter-icon.svg";
-import email from "../../assets/email-icon.svg";
-import github from "../../assets/github-icon.svg";
-import linkedin from "../../assets/linkedin-icon.svg";
+import React from 'react';
+
+import email from '../../assets/email-icon.svg';
+import linkedin from '../../assets/linkedin-icon.svg';
+import twitter from '../../assets/twitter-icon.svg';
 
 const Contacto = () => {
   return (
@@ -34,17 +34,7 @@ const Contacto = () => {
               alt="https://twitter.com/EzhePereyra"
             />
           </a>
-          <a
-            href="https://github.com/Ezequielpereyraa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="icons"
-              src={github}
-              alt="https://twitter.com/EzhePereyra"
-            />
-          </a>
+
           <a
             href="https://www.linkedin.com/in/ezequielpereyra/"
             target="_blank"

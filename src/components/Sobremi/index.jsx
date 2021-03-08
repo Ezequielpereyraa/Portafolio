@@ -1,6 +1,8 @@
-import React from "react";
-import sobremiImg from "../../assets/sobremi.svg";
-import "./sobremi.scss";
+import './sobremi.scss';
+
+import React from 'react';
+
+import sobremiImg from '../../assets/sobremi.svg';
 
 const Sobremi = () => {
   document.title = "GEP | Sobre Mi 👨🏽‍🦱";
@@ -35,24 +37,6 @@ const Sobremi = () => {
             personas.‎
           </p>
         </div>
-        {/* <h1 className="sobremi__skills">Skills</h1> */}
-        {/* <div className="skills">
-          <div className="skills__box">
-            <h5>HTML</h5>
-            <h5>CSS</h5>
-            <h5>SASS</h5>
-            <h5>BOOTSTRAP</h5>
-            <h5>JavaScript</h5>
-            <h5>React / Redux</h5>
-            <h5>NodeJS</h5>
-            <h5>ExpressJS</h5>
-            <h5>MongoDB</h5>
-            <h5>PostgreSQL</h5>
-            <h5>Sequelize</h5>
-            <h5>Git</h5>
-            <h5>SCRUM</h5>
-          </div>
-        </div> */}
       </div>
     </section>
   );

@@ -1,10 +1,12 @@
-import React, { useContext, useEffect } from "react";
-import "./proyectos.scss";
-import Repositorio from "./Repositorios";
-import almazen from "../../assets/Almazen.png";
-import petBuddies from "../../assets/Pet-Buddies.jpg";
-import ProyectosContext from "../../context/ProyectosContext";
-import Github from "../../assets/github-icon.svg";
+import './proyectos.scss';
+
+import React, { useContext, useEffect } from 'react';
+
+import almazen from '../../assets/Almazen.png';
+import Github from '../../assets/github-icon.svg';
+import petBuddies from '../../assets/Pet-Buddies.jpg';
+import ProyectosContext from '../../context/ProyectosContext';
+import Repositorio from './Repositorios';
 
 const Portafolio = () => {
   document.title = "GEP | Proyectos 💼";
@@ -89,10 +91,21 @@ const Portafolio = () => {
       </div>
       <div className="portafolio-container">
         {proyectosGithub &&
-          proyectosGithub.map((proyecto) => (
-            <Repositorio proyecto={proyecto} key={proyecto.node_id} />
+          proyectosGithub.map((proyecto, index) => (
+            <Repositorio proyecto={proyecto} key={index} />
           ))}
       </div>
+
+      <p className="portafolio__vermas">
+        Si quieres ver más proyectos visita mi{" "}
+        <a
+          href="https://github.com/Ezequielpereyraa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          perfil de Github
+        </a>
+      </p>
     </section>
   );
 };

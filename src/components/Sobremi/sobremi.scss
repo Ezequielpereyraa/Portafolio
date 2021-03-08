@@ -45,19 +45,18 @@
     }
   }
   &__descripcion {
-    padding: 2rem;
-    border-radius: 4;
+    padding: 1rem;
     font-size: 2rem;
-    font-weight: lighter;
-    line-height: 2.1;
+    font-weight: 200;
+    line-height: 1.7;
     &::first-letter {
       margin-left: 2rem;
       font-size: 2.4rem;
     }
 
     span {
-      color: #fff;
-      font-weight: 800;
+      color: #dd8682;
+      font-weight: 700;
     }
   }
 }
