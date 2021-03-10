@@ -79,11 +79,12 @@ const Portafolio = () => {
                 />
               </a>
               <a
+                className="card__enlace"
                 href="https://almazenhenry-51bf6.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ver Demo
+                Ver Demo →
               </a>
             </div>
           </div>

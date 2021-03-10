@@ -36,6 +36,18 @@ const Sobremi = () => {
             reubicarme para descubrir nuevas oportunidades, experiencias y
             personas.‎
           </p>
+          <p className="sobremi__descripcion sobremi__descripcion--fz">
+            Al momento en el que empecé a indagar en la programación, comence a
+            ser autodidacta. Me descubrí a mi mismo comprometido todos los días
+            con mis estudios, a querer crecer y perfeccionarme todos los días un
+            poco más, este proceso me llevó a conocerme a mi mismo, conocer mis
+            tiempo de aprendizaje, conocer distintos métodos para estudiar y
+            encontrar cuál se adapta mejor a mi forma de ser y también aprendí a
+            ordenar mi rutina diaria para poder abarcar todo lo que yo quería en
+            cada día. <br /> Dentro de todo lo que conocí entendí que mi parte
+            favorita es el Frontend y mi fuerte es el CSS. <br /> Sigo en el
+            proceso de crecer y ser mejor.
+          </p>
         </div>
       </div>
     </section>
