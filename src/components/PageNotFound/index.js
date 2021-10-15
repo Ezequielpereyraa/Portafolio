@@ -1,6 +1,6 @@
-import React from "react";
-import "./pageNotFound.scss";
-import image from "../../assets/error-404.svg";
+import React from 'react';
+import './pageNotFound.scss';
+import image from '../../assets/error-404.svg';
 
 const PageNotFound = () => {
   return (

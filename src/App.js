@@ -1,14 +1,14 @@
-import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProyectoState from "./context/ProyectoState";
-import Header from "./components/Header";
-import Nav from "./components/Header/Nav";
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ProyectoState from './context/ProyectoState';
+import Header from './components/Header';
+import Nav from './components/Header/Nav';
 
-const PageNotFound = lazy(() => import("./components/PageNotFound"));
-const Wrapper = lazy(() => import("./components/Wrapper"));
-const Portafolio = lazy(() => import("./components/Portafolio"));
-const Sobremi = lazy(() => import("./components/Sobremi"));
-const FormContact = lazy(() => import("./components/FormContact"));
+const PageNotFound = lazy(() => import('./components/PageNotFound'));
+const Wrapper = lazy(() => import('./components/Wrapper'));
+const Portafolio = lazy(() => import('./components/Portafolio'));
+const Sobremi = lazy(() => import('./components/Sobremi'));
+const FormContact = lazy(() => import('./components/FormContact'));
 
 const App = () => {
   const render = () => <p>Cargando ..</p>;

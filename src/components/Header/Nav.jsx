@@ -1,7 +1,6 @@
-import React from "react";
-import "./Nav.scss";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from 'react';
+import './Nav.scss';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   const [isShow, setIsShow] = useState(false);
@@ -15,19 +14,18 @@ const Nav = () => {
       />
 
       <label className="navigation__button" htmlFor="navi-toggle">
-        <span className="navigation__icon"></span>
+        <span className="navigation__icon" />
       </label>
 
       <div
         className="navigation__background"
-        style={{ transform: isShow ? "scale(100)" : "scale(0)" }}
-      ></div>
+        style={{ transform: isShow ? 'scale(100)' : 'scale(0)' }}
+      />
 
       <nav
         className="navigation__nav"
-        style={{ width: isShow ? "100%" : "0", opacity: isShow ? 1 : 0 }}
-        onClick={() => setIsShow(!isShow)}
-      >
+        style={{ width: isShow ? '100%' : '0', opacity: isShow ? 1 : 0 }}
+        onClick={() => setIsShow(!isShow)}>
         <ul className="navigation__list">
           <li className="navigation__item" onClick={() => setIsShow(!isShow)}>
             <NavLink to="/" className="navigation__link">

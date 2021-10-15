@@ -1,11 +1,11 @@
-import { GET_PROYECTOS } from "./Types";
+import { GET_PROYECTOS } from './Types';
 
 export default (state, { type, payload }) => {
   switch (type) {
     case GET_PROYECTOS:
       return {
         ...state,
-        proyectosGithub: payload,
+        proyectosGithub: payload
       };
     default:
       return state;

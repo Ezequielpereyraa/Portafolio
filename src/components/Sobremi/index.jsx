@@ -5,7 +5,7 @@ import React from 'react';
 import sobremiImg from '../../assets/sobremi.svg';
 
 const Sobremi = () => {
-  document.title = "GEP | Sobre Mi 👨🏽‍🦱";
+  document.title = 'GEP | Sobre Mi 👨🏽‍🦱';
   return (
     <section className="sobremi" id="sobremi">
       <h3>Sobre mi</h3>
@@ -18,16 +18,16 @@ const Sobremi = () => {
             <span> práctica y proyectos reales.</span>
           </p>
           <p className="sobremi__descripcion">
-            Las tecnologías con las que he trabajado:{" "}
+            Las tecnologías con las que he trabajado:{' '}
             <span>
               HTML/CSS/SASS/Styled Componets, Javascript, NodeJS/ExpressJS,
               ReactJS, Redux, PostgreSQL, Sequelize, Passport y Firebase.
-            </span>{" "}
+            </span>{' '}
             También he finalizado recientemente una aplicaciones móviles usando
             <span> TypeScript con React Native, MongoDB y Mongoose. ‎</span>
           </p>
           <p className="sobremi__descripcion">
-            Tengo experiencia usando bibliotecas como{" "}
+            Tengo experiencia usando bibliotecas como{' '}
             <span>Bootstrap, Material UI, rsuite.</span> Tambien estoy
             familiarizado con la Metodologia <span>BEM y Agiles</span> (Scrum).
             ‎ Me apasionan las nuevas tecnologías y el desarrollo de software,

@@ -2,22 +2,21 @@ import './proyectos.scss';
 
 import React, { useContext, useEffect } from 'react';
 
-import almazen from '../../assets/Almazen.png';
 import Github from '../../assets/github-icon.svg';
-import petBuddies from '../../assets/Pet-Buddies.jpg';
+import Almazen from '../../assets/Pet-Buddies.jpg';
 import ProyectosContext from '../../context/ProyectosContext';
 import Repositorio from './Repositorios';
+import { data } from './data.js';
 
 const Portafolio = () => {
-  document.title = "GEP | Proyectos 💼";
-
+  document.title = 'GEP | Proyectos 💼';
+  console.log({ data });
   const proyectContext = useContext(ProyectosContext);
 
   const { proyectosGithub, getProyectsF } = proyectContext;
-
+  console.log({ Almazen });
   useEffect(() => {
     getProyectsF();
-    // eslint-disable-next-line
   }, []);
 
   return (
@@ -31,65 +30,38 @@ const Portafolio = () => {
           </span>
         </h5>
         <div className="destacados__container">
-          <div className="destacados__box">
-            <img
-              className="destacados__box--img"
-              src={petBuddies}
-              alt="PetBuddies"
-            />
-            <div className="destacados__box--description">
-              <h1>PetBuddies</h1>
-              <p>
-                App mobile con React Native, Redux, Typescript,NodeJs, Express,
-                MongoDB y Firebase
-              </p>
-              <a
-                className="destacados__box--link"
-                href="https://github.com/Ezequielpereyraa/PetBuddies"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="destacados__box--git"
-                  src={Github}
-                  alt="Github"
-                />
-              </a>
+          {data.map(({ title, img, description, linkCoding, linkDemo }) => (
+            <div className="destacados__box" key={title}>
+              <img className="destacados__box--img" src={img} alt={title} />
+              <div className="destacados__box--description">
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <a
+                  className="destacados__box--link"
+                  href={linkCoding}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    className="destacados__box--git"
+                    src={Github}
+                    alt="Github"
+                  />
+                </a>
+                {linkDemo && (
+                  <a
+                    className="card__enlace"
+                    href={linkDemo}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Ver Demo →
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
-
-          <div className="destacados__box">
-            <img className="destacados__box--img" src={almazen} alt="AlmaZen" />
-            <div className="destacados__box--description">
-              <h1>AlmaZen</h1>
-              <p>
-                E-commerce Web con React, Redux, Sass, NodeJs, Express,
-                Sequelize, PostgresSQL, Passport
-              </p>
-              <a
-                className="destacados__box--link"
-                href="https://github.com/Ezequielpereyraa/ecommerce-ft07-g12-1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="destacados__box--git"
-                  src={Github}
-                  alt="Github"
-                />
-              </a>
-              <a
-                className="card__enlace"
-                href="https://almazenhenry-51bf6.web.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver Demo →
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+
       <div className="portafolio-container">
         {proyectosGithub &&
           proyectosGithub.map((proyecto, index) => (
@@ -98,12 +70,12 @@ const Portafolio = () => {
       </div>
 
       <p className="portafolio__vermas">
-        Si quieres ver más proyectos visita mi{" "}
+        Si quieres ver más proyectos visita mi
         <a
           href="https://github.com/Ezequielpereyraa"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
+          {' '}
           perfil de Github
         </a>
       </p>

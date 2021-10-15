@@ -5,9 +5,9 @@ import ProyectoReducer from './ProyectoReducer';
 import ProyectosContext from './ProyectosContext';
 import { GET_PROYECTOS } from './Types';
 
-const ProyectoState = (props) => {
+const ProyectoState = props => {
   const initialState = {
-    proyectosGithub: [],
+    proyectosGithub: []
   };
 
   //Dispatch para ejecutar las acciones
@@ -18,7 +18,7 @@ const ProyectoState = (props) => {
     try {
       dispatch({
         type: GET_PROYECTOS,
-        payload: datosProyectos,
+        payload: datosProyectos
       });
     } catch (err) {
       console.log(err);
@@ -29,9 +29,8 @@ const ProyectoState = (props) => {
     <ProyectosContext.Provider
       value={{
         proyectosGithub: state.proyectosGithub,
-        getProyectsF: getProyects,
-      }}
-    >
+        getProyectsF: getProyects
+      }}>
       {props.children}
     </ProyectosContext.Provider>
   );

@@ -15,7 +15,7 @@
 
 .portafolio-container {
   max-width: 100%;
-  width: 120rem;
+  width: 170rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-column-gap: 4rem;
@@ -95,7 +95,7 @@
 }
 
 .destacados {
-  width: 120rem;
+  width: 160rem;
   max-width: 100%;
   margin: 7rem auto;
   &__titulo {
@@ -104,6 +104,10 @@
   }
   &__container {
     margin-top: 2rem;
+    display: flex;
+    @media screen and (max-width: 75rem) {
+      flex-direction: column;
+    }
   }
   .destacados__box--git {
     width: 4rem;
@@ -115,7 +119,8 @@
   &__box {
     position: relative;
     width: 100%;
-    margin: 2rem 0;
+    margin: 1rem;
+    cursor: pointer;
     overflow: hidden;
     border-radius: 0.6rem;
     box-shadow: 0 0 1rem rgba(#000, 0.1);
@@ -162,7 +167,7 @@
     }
     &--description {
       padding: 2.5rem 4rem;
-      height: 15%;
+      height: 25%;
       position: absolute;
       bottom: 0;
       left: -250rem;

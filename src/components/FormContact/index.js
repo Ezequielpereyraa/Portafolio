@@ -1,32 +1,32 @@
-import React from "react";
-import emailjs from "emailjs-com";
-import "./Contact.scss";
-import Contacto from "../Contacto";
-import Swal from "sweetalert2";
+import React from 'react';
+import emailjs from 'emailjs-com';
+import './Contact.scss';
+import Contacto from '../Contacto';
+import Swal from 'sweetalert2';
 
 export default function ContactUs() {
-  document.title = "GEP | Contacto";
+  document.title = 'GEP | Contacto';
   function sendEmail(e) {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_ng8kgdg",
-        "template_mgmd8qt",
+        'service_ng8kgdg',
+        'template_mgmd8qt',
         e.target,
-        "user_DPaP4IBPN43Fmi8ev2UB1"
+        'user_DPaP4IBPN43Fmi8ev2UB1'
       )
       .then(
-        (result) => {
+        result => {
           Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "Email enviado correctamente!",
+            position: 'center',
+            icon: 'success',
+            title: 'Email enviado correctamente!',
             showConfirmButton: false,
-            timer: 3000,
+            timer: 3000
           });
-          document.querySelector("form").reset();
+          document.querySelector('form').reset();
         },
-        (error) => {
+        error => {
           console.log(error.text);
         }
       );
